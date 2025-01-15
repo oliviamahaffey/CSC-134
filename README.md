@@ -3,7 +3,9 @@ C++ Spring 2025 Class
 
 # CSC-134-0001
 User:  Liv
+
 Passphrase:  had to pick favorite Pokemon / anime character
+
 Answer:  Gengar | Yuji Itadori
 
 # Collaborators 
