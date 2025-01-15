@@ -10,8 +10,8 @@ using namespace std;
 int main()
 {
    cout << "Hello, World!" << endl;
-   cout << "I don't know what I'm doing!" << endl; 
-   endl;
+   cout << "I maybe know what I'm doing!" << endl; 
+   cout << endl;
 
    return 0;
 }
