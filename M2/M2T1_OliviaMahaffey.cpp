@@ -4,13 +4,14 @@
 // 1/29/2025
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main() {
    // This program will simulate an apple orchard.
    // The owner is Olivia Mahaffey
-string farm_name = " Liv's"
-int num_apples =  10;
+string farm_name = " Liv's";
+int num_apples = 10;
 double cost_each = 0.25;
 
 //new variables for M2T1
@@ -23,7 +24,7 @@ cout << "Hello! What is your name? ";
 cin >> user_name; 
 cout << "Thanks for coming by, " << user_name << "!" << endl; 
 
-cout << "Welcome to the" << farm_name << " apple farm!" << endl;
+cout << "Welcome to " << farm_name << " apple farm!" << endl;
 cout << "There are " << num_apples << " apples in stock." << endl;
 cout << "They cost $" << cost_each << " each." << endl;
 
