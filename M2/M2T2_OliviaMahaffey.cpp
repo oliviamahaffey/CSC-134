@@ -12,18 +12,25 @@ using namespace std;
 int main() {
 // set up variables 
 string store_name = "Liv Burgers"; 
-string food_item = "Cheeseburger";  
-double food_price = 5.99; 
+string food_name = "Cheeseburger";  
+double subtotal = 5.99; 
 
 // take order
-
 cout << "Welcome to " << store_name << "!" << endl;
-cout << "You have one " << food_item << " that is $5.99." << endl; 
+cout << "You have one " << food_name; 
+cout << " which costs $" << subtotal << endl; 
+
 
 // find totals
+double total;
+double tax_percent = 0.08; 
+double tax_cost = tax_percent * subtotal; 
+total = tax_cost + subtotal;
+cout << "Tax: $" << tax_cost << endl;
+cout << "Total: $" << total << endl; 
+
 
 // print receipt
-
 cout << "Have a nice day!" << endl; 
 cout << endl; 
 
