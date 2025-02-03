@@ -19,19 +19,24 @@ double subtotal = 5.99;
 cout << "Welcome to " << store_name << "!" << endl;
 cout << "You have one " << food_name; 
 cout << " which costs $" << subtotal << endl; 
-
+cout << "Here's your receipt, thank you!" << endl;
+cout << endl;
 
 // find totals
 double total;
 double tax_percent = 0.08; 
 double tax_cost = tax_percent * subtotal; 
 total = tax_cost + subtotal;
-cout << "Tax: $" << tax_cost << endl;
-cout << "Total: $" << total << endl; 
-
 
 // print receipt
-cout << "Have a nice day!" << endl; 
+cout << setprecision (2) << fixed; // 2 decimal places
+cout << "     YOUR RECEIPT" << endl; 
+cout << "---------------------" << endl; 
+cout << "  Subtotal:\t$" << subtotal << endl; 
+cout << "  Tax:\t\t$" << tax_cost << endl;
+cout << "---------------------" << endl; 
+cout << "  Total:\t$" << total << endl; 
+cout << "  Have a nice day!" << endl; 
 cout << endl; 
 
 
