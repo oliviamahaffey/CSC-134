@@ -6,12 +6,12 @@
 // make a simple sales program that creates receipts
 
 #include <iostream>
-#include <iomanip>
+#include <iomanip> // can use precision 
 using namespace std;
 
 int main() {
 // set up variables 
-string store_name = "Liv Burgers"; 
+string store_name = "Liv Burger"; 
 string food_name = "Cheeseburger";  
 double subtotal = 5.99; 
 
@@ -30,6 +30,7 @@ total = tax_cost + subtotal;
 
 // print receipt
 cout << setprecision (2) << fixed; // 2 decimal places
+// \t makes tab spaces 
 cout << "     YOUR RECEIPT" << endl; 
 cout << "---------------------" << endl; 
 cout << "  Subtotal:\t$" << subtotal << endl; 
