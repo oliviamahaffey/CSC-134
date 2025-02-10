@@ -38,11 +38,13 @@ cost = volume * 0.23;
 charge = volume * 0.50;
 profit = charge - cost;
 
-cout << setprecision (2) << fixed;
 // tell customer cost 
 cout << "Your crate with a volume of " << volume << " will be $" << charge << "." << endl; 
 cout << "Thank you!" << endl; 
 cout << endl; 
+
+//format results
+cout << setprecision (2) << fixed; 
 cout << "       SUMMARY        " << endl;
 cout << "----------------------" << endl;
 cout << "Volume:             " << volume << endl; 
