@@ -10,8 +10,8 @@ using namespace std;
 int main () {
 
 // establish variables
-int length, width, height; 
-int volume;
+double length, width, height; 
+double volume;
 
 
 // take crate order
@@ -33,7 +33,7 @@ cout << "has a volume of: " << volume << "." << endl;
 cout << endl; 
 
 // calculate cost and charge
-int cost, charge, profit;
+double cost, charge, profit; // having variables as doubles allows use of decimals, int is whole numbers
 cost = volume * 0.23;
 charge = volume * 0.50;
 profit = charge - cost;
@@ -44,7 +44,7 @@ cout << "Thank you!" << endl;
 cout << endl; 
 
 //format results
-cout << setprecision (2) << fixed; 
+cout << setprecision (2) << fixed << showpoint; 
 cout << "       SUMMARY        " << endl;
 cout << "----------------------" << endl;
 cout << "Volume:             " << volume << endl; 
