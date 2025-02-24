@@ -52,7 +52,11 @@ if (1 == choice) {
 
     }
     else if (A == battle) {
-    cout << "placeholder." << endl;
+    cout << endl;
+    cout << "You hold up your shield, heroicly defending yourself from the skeleton." << endl; 
+    cout << "The level 99 skeleton raises his sword, tapping your shield and completely shattering it (and you)." << endl;
+    cout << "K. O. " << endl;
+    cout << endl; 
 
 
     }
