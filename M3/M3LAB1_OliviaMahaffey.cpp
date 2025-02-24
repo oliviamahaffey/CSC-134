@@ -49,7 +49,6 @@ if (1 == choice) {
         cout << "The level 99 skeleton flicks your forehead with his finger." << endl; 
         cout << "K. O. " << endl; 
         cout << endl;
-
     }
     else if (A == battle) {
     cout << endl;
@@ -57,16 +56,20 @@ if (1 == choice) {
     cout << "The level 99 skeleton raises his sword, tapping your shield and completely shattering it (and you)." << endl;
     cout << "K. O. " << endl;
     cout << endl; 
-
-
     }
 
     else if (S == battle) {
-    cout << "placeholder." << endl;
-
+    cout << endl;
+    cout << "Face-to-face with a level 99 skeleton, there is one clear choice in your mind: RUN!" << endl; 
+    cout << "The skeleton sees you sprinting off and sighs, crawling back into his chest." << endl; 
+    cout << "You survived! But, you're still stuck in this dungeon." << endl;
+    cout << endl; 
 }
 else if (D == battle) {
-    cout << "placeholder." << endl;
+    cout << "Bones must be weak to fire, right? You raise your hand, sputtering out flames in the monster's direction."<< endl;
+    cout << "The level 99 skeleton opens his mouth, sucking up your flames and spewing them right back at you." << endl; 
+    cout << "K. O. " << endl; 
+    cout << endl;
 
     }
  
