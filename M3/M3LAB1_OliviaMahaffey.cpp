@@ -70,16 +70,23 @@ else if (D == battle) {
     cout << "The level 99 skeleton opens his mouth, sucking up your flames and spewing them right back at you." << endl; 
     cout << "K. O. " << endl; 
     cout << endl;
-
     }
- 
+else {
+    cout << "I'm sorry, that is not a valid choice." << endl;
+    cout << endl;
+}
 } 
 
 else if (2 == choice) {
-    cout << "You chose Door 2" << endl;
+    cout << "Chest 2? Let's judge your intuition..." << endl;
+    cout << endl;
+    cout << "A glimmering, shining chest descends upon you, greedily, you open it." << endl;
+    cout << "...It only contains one coin." << endl;
+    cout << endl;
 }
 else {
     cout << "I'm sorry, that is not a valid choice." << endl;
+    cout << endl;
 }
 
 
