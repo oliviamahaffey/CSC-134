@@ -44,8 +44,11 @@ if (1 == choice) {
     cin >> battle;
 
     if (W == battle) {
-    cout << "placeholder." << endl; 
-
+         cout << endl; 
+        cout << "You charge into the skeleton, flailing around your sword." << endl; 
+        cout << "The level 99 skeleton flicks your forehead with his finger." << endl; 
+        cout << "K. O. " << endl; 
+        cout << endl;
 
     }
     else if (A == battle) {
@@ -58,12 +61,13 @@ if (1 == choice) {
     cout << "placeholder." << endl;
 
 }
-
 else if (D == battle) {
     cout << "placeholder." << endl;
 
     }
  
+} 
+
 else if (2 == choice) {
     cout << "You chose Door 2" << endl;
 }
@@ -71,7 +75,7 @@ else {
     cout << "I'm sorry, that is not a valid choice." << endl;
 }
 
-}
+
 
 // finish up
 cout << "Thanks for playing!" << endl; // this runs no matter what they choose
