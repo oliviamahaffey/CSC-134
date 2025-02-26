@@ -21,12 +21,15 @@ int main() {
    // if else
    if (choice == yes){
     cout << "Cool! I would say 'me too', but I am a robot." << endl;
+    cout << endl;
    }
    if (choice == no){
     cout << "The person programming me disagrees with you. Sorry!" << endl;
+    cout << endl;
    }
    else {
     cout << "I'm sorry, I didn't quite get that..." << endl; 
+    cout << endl;
    }
 
 
