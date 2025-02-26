@@ -29,7 +29,13 @@ int main() {
     cout << "I'm sorry, I didn't quite get that..." << endl; 
    }
 
+   // question 2
+   cout << "Question #2 -- Calculator" << endl; 
+   cout << endl;
 
+   // question 3
+   cout << "Question #3 -- Dungeon Crawler" << endl; 
+   cout << endl;
 
 
 
