@@ -126,11 +126,12 @@ int main() {
    // code
    // intro 
    std::string message1 = "\"Hey, you! I challenge you to a battle!\" "; //quotation code courtesy of gpt!!
-   std::cout << message1 << std::endl; 
+   std::cout << "LIV:" << message1 << std::endl; 
+   cout << endl;
    cout << "Your opponent [LIV] has [2] available Pokémon for battle." << endl;
    cout << "You have [2] available Pokémon for battle."                << endl; 
    cout << "LIV sends out lvl. 45 EXEGGUTOR [🌿🔮]."                          << endl; 
-   cout << "You can send out lvl. 45 PIKACHU or lvl. 45 CHARIZARD."    << endl; 
+   cout << "You can send out lvl. 45 PIKACHU [⚡] or lvl. 45 CHARIZARD [🔥🪽]."    << endl; 
    string pokemon1;
    string PIKACHU = "pikachu"; 
    string CHARIZARD = "charizard"; 
@@ -138,30 +139,110 @@ int main() {
    // choice 1 loop 
    if (PIKACHU == pokemon1) {
     std::string message2 = "\"Go, PIKACHU!\"";
-    std::cout << message2 << std::endl; 
-    cout << "POKEDEX: EXEGGUTOR, the COCONUT POKÉMON is a GRASS PSYCHIC type. This makes it weak to FIRE, ICE, POISON, FLYING, BUG, GHOST and DARK." << endl; 
+    std::cout << "YOU:" << message2 << std::endl; 
+    cout << endl;
+    cout << "POKEDEX: EXEGGUTOR, the COCONUT POKÉMON, is a GRASS PSYCHIC type. This makes it weak to FIRE, POISON, FLYING, BUG, GHOST and DARK." << endl; 
     cout << "Thanks POKEDEX... that was helpful." << endl;
     cout << endl; 
     cout << "PIKACHU: lvl. 45" << endl; 
     cout << "HP:      135/135" << endl; 
-    cout << "MOVES:  2"        << endl;  
+    cout << "MOVES:   2"        << endl;  
     cout << endl; 
-    cout << "THUNDERBOLT            ELECTRO BALL" << endl; 
+    cout << "THUNDERBOLT            ELECTROBALL" << endl; 
     cout << "electric               electric"     << endl; 
     cout << "DMG: 90                DMG: 120"     << endl; 
     string pikachu1; 
     string THUNDERBOLT = "thunderbolt"; 
     string ELECTROBALL = "electroball"; 
     cin >> pikachu1; 
-    
- 
+    // attack1
+    if (pikachu1 == THUNDERBOLT){
+        cout << endl;
+        cout << "PIKACHU used THUNDERBOLT!" << endl; 
+        cout << "The attack... missed! It can do that?!" << endl;
+        cout << "LIV's EXEGGUTOR used BULLDOZE! It's super effective!" << endl; 
+        cout << "PIKACHU fainted!" << endl; 
+        cout << "LIV shakes her head, "; 
+        std::string message3 = "\"This feels cruel...just go..\""; 
+        std::cout << message3 << std::endl;
+        cout << endl;
+        cout << "GAME OVER" << endl; 
+        cout << endl; 
+    }
+    else if (pikachu1 == ELECTROBALL){
+        cout << endl;
+        cout << "PIKACHU used ELECTROBALL!" << endl; 
+        cout << "It's not very effective..." << endl; 
+        cout << "LIV's EXEGGUTOR used BULLDOZE! It's super effective!" << endl; 
+        cout << "PIKACHU fainted!" << endl; 
+        cout << "LIV shakes her head, "; 
+        std::string message4 = "\"This is mean...just go..\""; 
+        std::cout << message4 << std::endl;
+        cout << endl;
+        cout << "GAME OVER" << endl; 
+        cout << endl; 
+    }
+    else {
+        question3();
+    }
    }
    else if (CHARIZARD == pokemon1) {
-    cout << "right";
+    cout << endl;
+    cout << "POKEDEX: EXEGGUTOR, the COCONUT POKÉMON, is a GRASS PSYCHIC type. This makes it weak to FIRE, POISON, FLYING, BUG, GHOST and DARK." << endl; 
+    cout << "Thanks POKEDEX... that was helpful." << endl;
+    cout << endl; 
+    cout << "CHARIZARD: lvl. 45" << endl; 
+    cout << "HP:        135/135" << endl; 
+    cout << "MOVES:     2"        << endl;  
+    cout << endl; 
+    cout << "BLASTBURN              HURRICANE" << endl; 
+    cout << "fire                   flying" << endl; 
+    cout << "DMG: 150               DMG: 120"  << endl; 
+    string charizard1;
+    string BLASTBURN = "blastburn";
+    string HURRICANE = "hurricane";
+    cin >> charizard1; 
+    //attack 1
+    if (BLASTBURN == charizard1){
+        cout << endl; 
+        cout << "CHARIZARD used BLASTBURN!" << endl;
+        cout << "It's super, super effective!" << endl;
+        cout << "LIV's EXEGGUTOR fainted!" << endl; 
+        cout << endl;
+        std::string message5 = "\"What?! Rrgh, go BLASTOISE!\"";
+        std::cout << "LIV:" << message5 << std::endl;
+        cout << endl;
+        cout << "POKEDEX: BLASTOISE, the SHELLFISH POKÉMON is a WATER type. This makes it weak to ELECTRIC and GRASS." << endl;
+        cout << "Thanks POKEDEX... that was helpful." << endl; 
+        cout << endl; 
+        cout << "BLASTOISE [💧] used HYDRO CANNON!" << endl; 
+        cout << "Gah?! It's super effective!" << endl; 
+        cout << "CHARIZARD fainted!" << endl; 
+        std::string message6 = "\"I'm out of options, let's go PIKACHU!\""; 
+        std::cout << "YOU:" << message6 << std::endl;
+        cout << endl; 
+        cout << "The static electricity coming from PIKACHU makes contact with the wet battlefield and..." << endl; 
+        cout << "Yikes! Electrocutes BLASTOISE! There's no coming back from that!" << endl; 
+        cout << "VICTORY!" << endl; 
+        cout << endl; 
+
+    }
+    else if (HURRICANE == charizard1){
+        cout << endl; 
+        cout << "CHARIZARD used HURRICANE!" << endl; 
+        cout << "It blew LIV and EXEGGUTOR straight off the battlefield!" << endl;
+        cout << "Is that a victory? It's a victory!" << endl; 
+        cout << "VICTORY!" << endl; 
+        cout << endl;
+
+    }
+    else {
+        question3();
+    }
 
    }
    else {
-    cout << "wrong";
+    question3();
    }
    }
    
