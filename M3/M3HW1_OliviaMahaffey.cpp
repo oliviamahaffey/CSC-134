@@ -118,14 +118,51 @@ int main() {
         cout << "Invalid input.";
     }
 }
-
-
    // question 3
    void question3() {
-   cout << "Question #3 -- Dungeon Crawler" << endl; 
+   cout << "Question #3 -- Pokemon Battle" << endl; 
+   cout << "Please enter responses in lowercase." << endl;
    cout << endl;
    // code
-   
+   // intro 
+   std::string message1 = "\"Hey, you! I challenge you to a battle!\" "; //quotation code courtesy of gpt!!
+   std::cout << message1 << std::endl; 
+   cout << "Your opponent [LIV] has [2] available Pokémon for battle." << endl;
+   cout << "You have [2] available Pokémon for battle."                << endl; 
+   cout << "LIV sends out lvl. 45 EXEGGUTOR [🌿🔮]."                          << endl; 
+   cout << "You can send out lvl. 45 PIKACHU or lvl. 45 CHARIZARD."    << endl; 
+   string pokemon1;
+   string PIKACHU = "pikachu"; 
+   string CHARIZARD = "charizard"; 
+   cin >> pokemon1; 
+   // choice 1 loop 
+   if (PIKACHU == pokemon1) {
+    std::string message2 = "\"Go, PIKACHU!\"";
+    std::cout << message2 << std::endl; 
+    cout << "POKEDEX: EXEGGUTOR, the COCONUT POKÉMON is a GRASS PSYCHIC type. This makes it weak to FIRE, ICE, POISON, FLYING, BUG, GHOST and DARK." << endl; 
+    cout << "Thanks POKEDEX... that was helpful." << endl;
+    cout << endl; 
+    cout << "PIKACHU: lvl. 45" << endl; 
+    cout << "HP:      135/135" << endl; 
+    cout << "MOVES:  2"        << endl;  
+    cout << endl; 
+    cout << "THUNDERBOLT            ELECTRO BALL" << endl; 
+    cout << "electric               electric"     << endl; 
+    cout << "DMG: 90                DMG: 120"     << endl; 
+    string pikachu1; 
+    string THUNDERBOLT = "thunderbolt"; 
+    string ELECTROBALL = "electroball"; 
+    cin >> pikachu1; 
+    
+ 
+   }
+   else if (CHARIZARD == pokemon1) {
+    cout << "right";
+
+   }
+   else {
+    cout << "wrong";
+   }
    }
    
    
