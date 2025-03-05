@@ -1,5 +1,5 @@
 // CSC-134
-// M3HW1 - ??
+// M3HW1 - silver
 // oliviamahaffey
 // 2/26/2025
 
@@ -126,7 +126,7 @@ int main() {
    // code
    // intro 
    std::string message1 = "\"Hey, you! I challenge you to a battle!\" "; //quotation code courtesy of gpt!!
-   std::cout << "LIV:" << message1 << std::endl; 
+   std::cout << "LIV: " << message1 << std::endl; 
    cout << endl;
    cout << "Your opponent [LIV] has [2] available Pokémon for battle." << endl;
    cout << "You have [2] available Pokémon for battle."                << endl; 
@@ -139,7 +139,7 @@ int main() {
    // choice 1 loop 
    if (PIKACHU == pokemon1) {
     std::string message2 = "\"Go, PIKACHU!\"";
-    std::cout << "YOU:" << message2 << std::endl; 
+    std::cout << "YOU: " << message2 << std::endl; 
     cout << endl;
     cout << "POKEDEX: EXEGGUTOR, the COCONUT POKÉMON, is a GRASS PSYCHIC type. This makes it weak to FIRE, POISON, FLYING, BUG, GHOST and DARK." << endl; 
     cout << "Thanks POKEDEX... that was helpful." << endl;
@@ -188,6 +188,8 @@ int main() {
    }
    else if (CHARIZARD == pokemon1) {
     cout << endl;
+    std::string message9 = "\" Go, CHARIZARD!\""; 
+    std::cout << "YOU:" << message9 << std::endl; 
     cout << "POKEDEX: EXEGGUTOR, the COCONUT POKÉMON, is a GRASS PSYCHIC type. This makes it weak to FIRE, POISON, FLYING, BUG, GHOST and DARK." << endl; 
     cout << "Thanks POKEDEX... that was helpful." << endl;
     cout << endl; 
@@ -210,7 +212,7 @@ int main() {
         cout << "LIV's EXEGGUTOR fainted!" << endl; 
         cout << endl;
         std::string message5 = "\"What?! Rrgh, go BLASTOISE!\"";
-        std::cout << "LIV:" << message5 << std::endl;
+        std::cout << "LIV: " << message5 << std::endl;
         cout << endl;
         cout << "POKEDEX: BLASTOISE, the SHELLFISH POKÉMON is a WATER type. This makes it weak to ELECTRIC and GRASS." << endl;
         cout << "Thanks POKEDEX... that was helpful." << endl; 
@@ -219,7 +221,7 @@ int main() {
         cout << "Gah?! It's super effective!" << endl; 
         cout << "CHARIZARD fainted!" << endl; 
         std::string message6 = "\"I'm out of options, let's go PIKACHU!\""; 
-        std::cout << "YOU:" << message6 << std::endl;
+        std::cout << "YOU: " << message6 << std::endl;
         cout << endl; 
         cout << "The static electricity coming from PIKACHU makes contact with the wet battlefield and..." << endl; 
         cout << "Yikes! Electrocutes BLASTOISE! There's no coming back from that!" << endl; 
