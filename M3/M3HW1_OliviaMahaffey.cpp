@@ -121,10 +121,10 @@ int main() {
 
 
    // question 3
-   // code
    void question3() {
    cout << "Question #3 -- Dungeon Crawler" << endl; 
    cout << endl;
+   // code
    
    }
    
