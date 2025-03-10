@@ -28,7 +28,7 @@ int main()
         cout << num << "\t" << sq << endl; 
         num = num + 1;
     }
-    // part 3
+    // part 3 additional stuff
     bool is_valid = false; 
     int choice; 
     while (is_valid == false) {
