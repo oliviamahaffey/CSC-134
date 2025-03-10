@@ -28,6 +28,24 @@ int main()
         cout << num << "\t" << sq << endl; 
         num = num + 1;
     }
-
+    // part 3
+    bool is_valid = false; 
+    int choice; 
+    while (is_valid == false) {
+        cout << "Press 1 or 2 to finish." << endl;
+        cin >> choice; 
+        if (choice == 1) {
+            cout << "You picked 1." << endl; 
+            is_valid = true;
+        }
+        else if (choice == 2) {
+            cout << "You picked 2." << endl; 
+            is_valid = true; 
+        }
+        else {
+            cout << "Sorry, not valid.  Try again." << endl; 
+        }
+    cout << "Goodbye.";
+    }
     return 0; // done
 }
