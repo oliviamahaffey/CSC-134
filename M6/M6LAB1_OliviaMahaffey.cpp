@@ -49,10 +49,5 @@ int main() {
     mag.pop_back(); 
     cout << "Mag contains " << mag.size() << " shells" << endl; 
     cout << "It could hold up to " << mag.capacity() << " before resizing." << endl; 
- 
-
-
-
-
     return 0; 
 }
