@@ -24,6 +24,7 @@ void main_menu();
 void choice_front_door();
 void choice_back_door();
 void choice_go_home();
+void explore_kitchen_final(); 
 // TODO: add more choices here
 
 int main() {
@@ -50,9 +51,9 @@ void main_menu() {
   if (1 == choice) {
     choice_front_door();
   } else if (2 == choice) {
-    choice_back_door;
+    choice_back_door();
   } else if (3 == choice) {
-    choice_go_home;
+    choice_go_home();
   } else if (4 == choice) {
     cout << "Ok, quitting game" << endl;
     return; // go back to main()
@@ -93,8 +94,9 @@ void choice_back_door() {
     cin >> choice;
     if (1 == choice) {
       cout << "You climb in and find yourself in a dark, dusty kitchen..." << endl;
-      // Add another function for the next stage here
-    } else if (2 == choice) {
+      explore_kitchen_final(); 
+    } 
+    else if (2 == choice) {
       choice_go_home();
     }
   }
@@ -103,3 +105,41 @@ void choice_back_door() {
     cout << "You decide this place is just too creepy and head home." << endl;
     cout << "Maybe another adventure awaits another day." << endl;
   }
+
+  void explore_kitchen_final() {
+    cout << "The kitchen is eerily quiet, save for the slow creak of a swaying light fixture." << endl;
+    cout << "The walls seem to close in around you. You must act fast..." << endl;
+    cout << "You see:" << endl;
+    cout << "1. A flickering candle on the dining table" << endl;
+    cout << "2. A rotten trapdoor in the corner" << endl;
+    cout << "3. A rusted knife on the counter" << endl;
+    cout << "4. A dusty old book with an ominous symbol on the cover" << endl;
+    
+    int choice;
+    cout << "Choose: ";
+    cin >> choice;
+
+    if (choice == 1) {
+        cout << "The candle’s flame flares wildly, and suddenly, the room is engulfed in darkness." << endl;
+        cout << "You feel hands grasping at you from the void. The house has claimed you." << endl;
+        cout << "GAME OVER." << endl;
+    } else if (choice == 2) {
+        cout << "You pry open the trapdoor. A foul stench hits you as shadows swarm up from below." << endl;
+        cout << "Before you can react, something pulls you under. You are never seen again." << endl;
+        cout << "GAME OVER." << endl;
+    } else if (choice == 3) {
+        cout << "You grab the knife, but as soon as you touch it, a piercing scream fills your ears." << endl;
+        cout << "Your vision blurs, and your body collapses to the floor. The house has won." << endl;
+        cout << "GAME OVER." << endl;
+    } else if (choice == 4) {
+        cout << "You hesitantly open the book. The pages glow faintly, revealing ancient words." << endl;
+        cout << "You read the incantation aloud. The house trembles violently, and suddenly..." << endl;
+        cout << "A doorway appears in front of you, leading to safety!" << endl;
+        cout << "You run through it as the haunted house collapses behind you. You've survived!" << endl;
+        cout << "CONGRATULATIONS, YOU WIN!" << endl;
+    } else {
+        cout << "The house senses your hesitation. The walls begin closing in..." << endl;
+        cout << "Your fate is sealed." << endl;
+        cout << "GAME OVER." << endl;
+    }
+}
