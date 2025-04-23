@@ -91,7 +91,7 @@ int main() {
     connections[PLANK][WEST] = -1;                 // No connection west
     
     // Basement connections
-    connections[BASEMENT][NORTH] = BOW;         // Basement -> North -> BOW
+    connections[BASEMENT][NORTH] = BOW;             // Basement -> North -> BOW
     connections[BASEMENT][EAST] = -1;               // No connection east
     connections[BASEMENT][SOUTH] = -1;              // No connection south
     connections[BASEMENT][WEST] = -1;               // No connection west
